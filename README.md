@@ -144,3 +144,16 @@ django-admin startapp scheduler
 cd ..
 ```
 
+A lot of files were created by the django `startproject` and `startapp` commands. The standard created **database** was a *sqlite3* database, this database is the simpler choice, it is a local file stored in the app's root directory. A lot of files and configurations was created, so we need to apply this changes to our database, let's to this suing this command:
+
+```bash
+python manage.py migrate
+```
+
+We also need a super user access our system:
+
+```bash
+python manage.py createsuperuser --email <your_email> --username admin
+```
+
+The command will ask you to define a password for the user. Please write down the password in your mind, we are going to need this password further in this tutorial.

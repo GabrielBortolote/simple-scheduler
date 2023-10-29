@@ -1,1 +1,9 @@
+# ignore installed dependencies
 venv/*
+
+# ignore local dabase file
+db.sqlite3
+
+# ingore cache files
+*__pycache__*
+*.pyc
